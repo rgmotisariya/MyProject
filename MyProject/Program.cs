@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Transactions;
 using System.Xml.Linq;
+using MyProject;
 using static System.Net.Mime.MediaTypeNames;
 
 //Console.WriteLine("Enter your name");
@@ -153,5 +154,9 @@ using static System.Net.Mime.MediaTypeNames;
 
 // Jump Statements
 //break statement is used to terminate the loop or statement in which it is present.
+
+
+Person p1 = new Person { Name = "Radhika" };
+p1.Greet();
 
 Console.ReadLine();
