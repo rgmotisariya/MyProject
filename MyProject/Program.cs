@@ -4,6 +4,8 @@ using System.Xml.Linq;
 using MyProject;
 using static System.Net.Mime.MediaTypeNames;
 
+//
+
 //Console.WriteLine("Enter your name");
 //String name= Console.ReadLine();
 //Console.WriteLine("welcome " + name);
@@ -156,7 +158,15 @@ using static System.Net.Mime.MediaTypeNames;
 //break statement is used to terminate the loop or statement in which it is present.
 
 
-Person p1 = new Person { Name = "Radhika" };
-p1.Greet();
+//Person p1 = new Person { Name = "Radhika" };
+//p1.Greet();
+
+//Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
+//Console.WriteLine(d1.GetAge());
+//Console.WriteLine(d1.GetName());
+//Console.WriteLine(d1.GetColor());
+//Console.WriteLine(d1.ToString());
+
+
 
 Console.ReadLine();
