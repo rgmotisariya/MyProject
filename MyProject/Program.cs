@@ -1,10 +1,33 @@
 ﻿using System;
+using System.Collections;
 using System.Transactions;
 using System.Xml.Linq;
 using MyProject;
 using static System.Net.Mime.MediaTypeNames;
 
-//
+// // Data Type
+
+//byte b = 255; //1
+//bool b1= true; //1
+//char a = 'G'; //2
+//int i = 89;   //2
+//short s = 56;  //2
+//long l = 4564;   //8   
+//double d = 8.358674532;  //8 
+//float f = 3.7330645f; //4
+//decimal dec = 389.5m; //16
+
+//Console.WriteLine("byte: " + b);
+//Console.WriteLine("bool: " + b1);
+//Console.WriteLine("char: " + a);
+//Console.WriteLine("integer: " + i);
+//Console.WriteLine("short: " + s);
+//Console.WriteLine("long: " + l);
+//Console.WriteLine("float: " + f);
+//Console.WriteLine("double: " + d);
+//Console.WriteLine("decimal: " + dec);
+
+////type conversion
 
 //Console.WriteLine("Enter your name");
 //String name= Console.ReadLine();
@@ -19,6 +42,27 @@ using static System.Net.Mime.MediaTypeNames;
 
 
 //Types of operators
+// 1.implicit type conversion -no data lose
+// byte -> int -> float 
+
+//explicite type coversion  -data lose
+//int -> byte
+
+//int i = 1;
+//byte b = (byte) i;
+//Console.WriteLine("b = "+ b); //1
+
+//float f =1.0f;
+//int n =(int) f;
+//Console.WriteLine("n = "+ n); //1
+
+//non compatible
+//string s = "35";
+//int i= Convert.ToInt32(s);
+//int j= int.Parse(s);
+//Console.WriteLine(i);
+//Console.WriteLine(j);
+//Tobyte() ToInt16() ToInt64()
 
 ////1. Arithmetic Operators
 //int a = 10, b = 3;
@@ -27,7 +71,7 @@ using static System.Net.Mime.MediaTypeNames;
 //Console.WriteLine("mul " + (a * b)); 
 //Console.WriteLine("div " + (a / b));
 //Console.WriteLine("mod " + (a % b)); 
-//Console.ReadLine();
+
 
 ////2. Assignment Operators
 //int num = 5;
@@ -36,7 +80,7 @@ using static System.Net.Mime.MediaTypeNames;
 ////num *= 2;
 ////num /= 2;
 //Console.WriteLine(num);
-//Console.ReadLine();
+
 
 ////3. Logical Operators
 //bool a = true, b = false;
@@ -69,9 +113,12 @@ using static System.Net.Mime.MediaTypeNames;
 //int a = Math.Max(10, 20);
 //int b = Math.Min(10, 20);
 //Console.WriteLine(b);
-//Console.ReadLine();
+
+
 
 //String Manipulation
+
+
 //string message = " Hello, World!";
 
 //Console.WriteLine(message.Length);
@@ -93,14 +140,19 @@ using static System.Net.Mime.MediaTypeNames;
 //    Console.WriteLine(c);
 //}
 
+
 //Escape sequence charaters
+
 
 //string sentence1 = "hello,\n How are you?";
 //string sentence2 = "How to add \" in string?";
 //string sentence3 = "How to add \t (tab) in sentence?";
 //Console.WriteLine(sentence3);
 
+
 //If Else / Conditionals
+
+
 //Console.WriteLine("enter your age");
 //String age = Console.ReadLine();
 
@@ -114,6 +166,8 @@ using static System.Net.Mime.MediaTypeNames;
 //}
 
 //Swetch
+
+
 //int nitem = 5;
 //switch (nitem)
 //{
@@ -131,8 +185,11 @@ using static System.Net.Mime.MediaTypeNames;
 //        break;
 //}
 
+
 //Loops
+
 //1. while loop 
+
 //int x = 1;
 //while (x <= 4)
 //{
@@ -154,9 +211,18 @@ using static System.Net.Mime.MediaTypeNames;
 //}
 //while (x < 5);
 
+
 // Jump Statements
+
+
 //break statement is used to terminate the loop or statement in which it is present.
 
+
+
+
+//oop concepts
+
+// class and object
 
 //Person p1 = new Person { Name = "Radhika" };
 //p1.Greet();
@@ -167,6 +233,49 @@ using static System.Net.Mime.MediaTypeNames;
 //Console.WriteLine(d1.GetColor());
 //Console.WriteLine(d1.ToString());
 
+//Types of Constructor
+//class Dog
+//{
+//    String name;
+//    int age;
+//    ////Default Constructor
+//    //public Dog()
+//    //{
+//    //    Console.WriteLine("Default Constructor");
+//    //}
+//    ////Parameterized Constructor
+//    //Dog(String name, int age)
+//    //{
+//    //    this.name = name;
+//    //    this.age = age;
+//    //}
+//    //Copy Constructor
 
+//    ////Private Constructor
+//    //private Dog()
+//    //{
+//    //    Console.WriteLine(" private constructor");
+//    //}
+
+//    //Static Constructor
+//    //static Dog()
+//    //{
+//    //    Console.WriteLine("Static Constructor");
+//    //}
+//}
+
+//Arrays
+//int[] arr1 = new int[5];
+//int[] arr2 = new int[5] { 1, 2, 3, 4, 5 };
+int[] arr3 = { 1, 2, 3, 4, 5 };
+
+Console.Write("For loop :");
+for (int i = 0; i < arr3.Length; i++)
+   { 
+    Console.Write(" " + arr3[i]); 
+}
+Console.WriteLine("\n");
+Console.WriteLine("Length " +  arr3.Length);
+Console.WriteLine("Rank of the array: " + arr3.Rank);
 
 Console.ReadLine();
