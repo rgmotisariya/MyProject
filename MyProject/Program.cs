@@ -161,12 +161,13 @@ using static System.Net.Mime.MediaTypeNames;
 //Person p1 = new Person { Name = "Radhika" };
 //p1.Greet();
 
-//Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
-//Console.WriteLine(d1.GetAge());
-//Console.WriteLine(d1.GetName());
-//Console.WriteLine(d1.GetColor());
-//Console.WriteLine(d1.ToString());
+Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
+Console.WriteLine(d1.GetAge());
+Console.WriteLine(d1.GetName());
+Console.WriteLine(d1.GetColor());
+Console.WriteLine(d1.ToString());
 
+//test commit
 
 
 Console.ReadLine();
