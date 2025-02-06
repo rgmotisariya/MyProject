@@ -227,47 +227,12 @@ using static System.Net.Mime.MediaTypeNames;
 //Person p1 = new Person { Name = "Radhika" };
 //p1.Greet();
 
-//Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
-//Console.WriteLine(d1.GetAge());
-//Console.WriteLine(d1.GetName());
-//Console.WriteLine(d1.GetColor());
-//Console.WriteLine(d1.ToString());
+Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
+Console.WriteLine(d1.GetAge());
+Console.WriteLine(d1.GetName());
+Console.WriteLine(d1.GetColor());
+Console.WriteLine(d1.ToString());
 
-//Types of Constructor
-//class Dog
-//{
-//    String name;
-//    int age;
-//    ////Default Constructor
-//    //public Dog()
-//    //{
-//    //    Console.WriteLine("Default Constructor");
-//    //}
-//    ////Parameterized Constructor
-//    //Dog(String name, int age)
-//    //{
-//    //    this.name = name;
-//    //    this.age = age;
-//    //}
-//    //Copy Constructor
-
-//    ////Private Constructor
-//    //private Dog()
-//    //{
-//    //    Console.WriteLine(" private constructor");
-//    //}
-
-//    //Static Constructor
-//    //static Dog()
-//    //{
-//    //    Console.WriteLine("Static Constructor");
-//    //}
-//}
-
-//Arrays
-//int[] arr1 = new int[5];
-//int[] arr2 = new int[5] { 1, 2, 3, 4, 5 };
-int[] arr3 = { 1, 2, 3, 4, 5 };
 
 Console.Write("For loop :");
 for (int i = 0; i < arr3.Length; i++)
