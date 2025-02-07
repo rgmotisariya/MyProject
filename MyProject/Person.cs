@@ -8,11 +8,11 @@ namespace MyProject
 {
     internal class Person
     {
-        public string Name { get; set; }
+        public string name { get; set; }
 
         public void Greet()
         {
-            Console.WriteLine($"Hello, my name is {Name}");
+            Console.WriteLine($"Hello, my name is { name }");
         }
     }
 }

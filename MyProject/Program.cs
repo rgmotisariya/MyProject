@@ -224,23 +224,159 @@ using static System.Net.Mime.MediaTypeNames;
 
 // class and object
 
-//Person p1 = new Person { Name = "Radhika" };
+//ex-1
+//Person p1 = new Person { name = "Radhika" };
 //p1.Greet();
 
-Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
-Console.WriteLine(d1.GetAge());
-Console.WriteLine(d1.GetName());
-Console.WriteLine(d1.GetColor());
-Console.WriteLine(d1.ToString());
+//ex-2
+//Dog d1 = new Dog("tommy", Convert.ToInt16(3), "brown");
+//Console.WriteLine(d1.GetAge());
+//Console.WriteLine(d1.GetName());
+//Console.WriteLine(d1.GetColor());
+//Console.WriteLine(d1.ToString());
+
+//int[] arr1 = new int[5];
+//int[] arr2 = new int[5] { 1, 2, 3, 4, 5 };
+//int[] arr3 = { 1, 2, 3, 4, 5 };
+
+////traversal of array element
+//for (int i = 0; i < arr3.Length; i++)
+//{
+//    Console.Write(" " + arr3[i]);
+//}
+
+//properties of array
+//Console.WriteLine("\n");
+//Console.WriteLine("Length " +  arr3.Length);
+//Console.WriteLine("Rank of the array: " + arr3.Rank);
+
+//methods of array
+//int[] numbers = { 5, 2, 8, 3, 9, 1, 7, 4 };
+//static void PrintArray<T>(T[] array)
+//{
+//    foreach (var item in array) Console.Write(item + " ");
+//    Console.WriteLine();
+//}
+
+//// AsReadOnly
+//var readOnlyNumbers = Array.AsReadOnly(numbers);
+//Console.WriteLine("Read-Only Array:");
+//foreach (var num in readOnlyNumbers) 
+//    Console.Write(num + " ");
+//Console.WriteLine();
+
+//// BinarySearch
+//Array.Sort(numbers); // Required for BinarySearch
+//int index = Array.BinarySearch(numbers, 7);
+//Console.WriteLine($"Index of 7 after BinarySearch: {index}");
+
+//// Clear
+//Array.Clear(numbers, 2, 2); // Clears two elements starting at index 2
+//Console.WriteLine("After Clear:");
+//PrintArray(numbers);
+
+//// Clone
+//var clonedArray = (int[])numbers.Clone(); //Creates a shallow copy of the Array.
+//Console.WriteLine("Cloned Array:");
+//PrintArray(clonedArray);
+
+//// ConstrainedCopy
+//int[] destinationArray = new int[5];
+//Array.ConstrainedCopy(numbers, 1, destinationArray, 0, 5);
+//Console.WriteLine("After ConstrainedCopy:");
+//PrintArray(destinationArray);
+
+//// ConvertAll
+//string[] stringNumbers = Array.ConvertAll(numbers, x => x.ToString()); //Converts an array of one type to an array of another type.
+//Console.WriteLine("Converted to String Array:");
+//PrintArray(stringNumbers);
+
+//// Copy
+//int[] copiedArray = new int[4];
+//Array.Copy(numbers, 1, copiedArray, 0, 4);
+//Console.WriteLine("Copied Array:");
+//PrintArray(copiedArray);
+
+//// CopyTo
+//int[] copiedToArray = new int[10];
+//numbers.CopyTo(copiedToArray, 2);
+//Console.WriteLine("Copied to new array using CopyTo:");
+//PrintArray(copiedToArray);
+
+//// Empty
+//int[] emptyArray = Array.Empty<int>();
+//Console.WriteLine($"Empty array length: {emptyArray.Length}");
+
+//// Exists
+//bool hasEven = Array.Exists(numbers, x => x % 2 == 0);
+//Console.WriteLine($"Array contains an even number: {hasEven}");
+
+//// Find
+//int firstEven = Array.Find(numbers, x => x % 2 == 0);
+//Console.WriteLine($"First even number: {firstEven}");
+
+//// FindAll
+//int[] allOdds = Array.FindAll(numbers, x => x % 2 != 0);
+//Console.WriteLine("All odd numbers:");
+//PrintArray(allOdds);
+
+//// ForEach
+//Console.WriteLine("Array elements using ForEach:");
+//Array.ForEach(numbers, x => Console.Write(x + " "));
+//Console.WriteLine();
+
+//// GetLength
+//Console.WriteLine($"Length of array: {numbers.GetLength(0)}");
+
+//// GetUpperBound
+//Console.WriteLine($"Upper bound of array: {numbers.GetUpperBound(0)}");
+
+//// GetLowerBound
+//Console.WriteLine($"Lower bound of array: {numbers.GetLowerBound(0)}");
+
+//// GetValue
+//Console.WriteLine($"Value at index 3: {numbers.GetValue(3)}");
+
+//// IndexOf
+//int indexOfValue = Array.IndexOf(numbers, 8);
+//Console.WriteLine($"Index of 8: {indexOfValue}");
+
+//// Resize
+//Array.Resize(ref numbers, 10);
+//Console.WriteLine("Resized Array:");
+//PrintArray(numbers);
+
+//// Reverse
+//Array.Reverse(numbers);
+//Console.WriteLine("Reversed Array:");
+//PrintArray(numbers);
+
+//// SetValue
+//numbers.SetValue(99, 0);
+//Console.WriteLine("After SetValue:");
+//PrintArray(numbers);
+
+//// Sort
+//Array.Sort(numbers);
+//Console.WriteLine("Sorted Array:");
+//PrintArray(numbers);
+
+//// ToString
+//Console.WriteLine("ToString for array: " + numbers.ToString());
 
 
-Console.Write("For loop :");
-for (int i = 0; i < arr3.Length; i++)
-   { 
-    Console.Write(" " + arr3[i]); 
-}
-Console.WriteLine("\n");
-Console.WriteLine("Length " +  arr3.Length);
-Console.WriteLine("Rank of the array: " + arr3.Rank);
+//Array List 
+
+//ArrayList arrayList = new ArrayList();
+//arrayList.Add(123);
+//arrayList.Add("hello");
+//arrayList.Add(3.14);
+
+//foreach (var item in arrayList)
+//{
+//    Console.WriteLine(item);
+//}
+//Console.WriteLine("number of elements: " + arrayList.Count);
+//Console.WriteLine("Capacity of an ArrayList : " + arrayList.Capacity);
 
 Console.ReadLine();
